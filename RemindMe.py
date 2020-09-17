@@ -46,7 +46,7 @@ while permission == "c":
             print("Remaining time - ",timedelta(seconds = time_left))
             time.sleep(time_left)
             toaster = ToastNotifier()
-            toaster.show_toast("Reminder",message)
+            toaster.show_toast("Reminder",message,duration = 8)
             permission = input("Enter c to continue or any other letter to exit : ")
         else:
             print("The time has already passed, please enter valid time")
